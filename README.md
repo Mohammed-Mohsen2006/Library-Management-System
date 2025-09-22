@@ -8,11 +8,9 @@ This project allows users to:
 - Generate reports.
 
 ## 📌 Features
-- Add and remove books.
-- Search for books.
-- Track sales and generate simple reports.
-
-## 🚀 Future Improvements
-- Add a graphical interface.
-- Connect with a database.
-- Enhance reporting features.
+- Add new books with title, author, price, and stock
+- Display all available books
+- Search books by title or author
+- Buy books and update stock automatically
+- Update or delete existing books
+- Generate reports (total stock, out-of-stock books, total profit)
