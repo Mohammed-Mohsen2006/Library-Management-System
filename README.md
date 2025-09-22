@@ -1,10 +1,11 @@
-📚 Library Management System
-A simple console-based Library Management System built in C++.
+# 📚 Library Management System
+
+A simple console-based **Library Management System** built in **C++**.  
 This project allows users to:
 
-Manage books (add, delete, search, and list).
-Handle sales and transactions.
-Generate reports.
+- Manage books (add, delete, search, and list).
+- Handle sales and transactions.
+- Generate reports.
 ---
 
 ## ✨ Features
