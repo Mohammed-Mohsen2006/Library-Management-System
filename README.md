@@ -20,7 +20,12 @@ This project allows users to:
 ## 🚀 How to Run
 
 1. Make sure you have a C++ compiler installed (`g++` recommended).
-2. Clone the repo or copy the code to a file named `main.cpp`.
+2. Clone the repository:
+   ```bash
+   git clone https://github.com/Mohammed-Mohsen2006/Library-Management-System.git
 3. Compile the code:
    ```bash
    g++ main.cpp -o library
+4. Run the program:
+   ./library    # For Linux/Mac
+   library.exe  # For Windows
