@@ -28,4 +28,5 @@ This project allows users to:
    g++ main.cpp -o library
 4. Run the program:
    ./library    # For Linux/Mac
+   
    library.exe  # For Windows
