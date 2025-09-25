@@ -2,13 +2,13 @@
 #include<string>
 #include<vector>
 using namespace std;
-struct book{
+struct book {
 	string title, author;
 	int id, price, stock;
 };
 vector<book>books;
 int nxtid = 1, profit = 0;
-void addbook(){
+void addbook() {
 	book b;
 	b.id = nxtid++;
 	cin.ignore();
@@ -17,12 +17,37 @@ void addbook(){
 	if (b.title == "0")return;
 	cout << "Enter author : ";
 	getline(cin, b.author);
+	for (int i = 0; i < books.size(); i++)
+	{
+		if (books[i].title == b.title && books[i].author == b.author) {
+			cout << "\n This book already exists in the library \n";
+			cout << "ID : " << books[i].id << " || Title : " << books[i].title << " || author : " << books[i].author;
+			cout << " || Price : " << books[i].price << "$ || Stock : " << books[i].stock << endl;
+			char x;
+			cout << "Are you want to update this book (y/n) ? \n";
+			cin >> x;
+			if (x=='Y'||x=='y')
+			{
+				cin.ignore();
+				cout << "Enter new title : ";
+				getline(cin, books[i].title);
+				cout << "Enter new author : ";
+				getline(cin, books[i].author);
+				cout << "Enter new price : ";
+				cin >> books[i].price;
+				cout << "Enter new stock : ";
+				cin >> books[i].stock;
+				cout << "\n Book updated \n";
+			}
+			return;
+		}
+	}
 	cout << "Enter Price : ";
 	cin >> b.price;
 	cout << "Enter Stock : ";
 	cin >> b.stock;
 	books.push_back(b);
-	cout << "Book added successfully \n";
+	cout << "\n Book added successfully \n";
 }
 void displaybooks() {
 	if (books.empty()) {
@@ -177,6 +202,6 @@ int main() {
 		default:
 			cout << "Invalid choice \n";
 		}
-	} while (choice!=8);
+	} while (choice != 8);
 	return 0;
 }
