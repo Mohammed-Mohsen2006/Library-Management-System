@@ -1,32 +1,36 @@
-# 📚 Library Management System
+# 📚 Library Management System (C++)
 
-A simple project **Library Management System** built in **C++**.  
-This project allows users to:
+A simple **Library Management System** built in **C++** that allows users to manage books efficiently through a console-based interface.
 
-- Manage books (add, delete, search, and list).
-- Handle sales and transactions.
-- Generate reports.
 ---
 
-## ✨ Features
-- Add new books with title, author, price, and stock
-- Display all available books
-- Search books by title or author
-- Buy books and update stock automatically
-- Update or delete existing books
-- Generate reports (total stock, out-of-stock books, total profit)
+## 🚀 Features
+
+- ➕ **Add New Book** — Add new books with title, author, price, and stock.
+- 🔍 **Search Books** — Search by title or author (supports partial search).
+- 💰 **Buy Book** — Purchase books and update stock & profit automatically.
+- ✏️ **Update Book** — Update title, author, price, stock, or all details.
+- ❌ **Delete Book** — Remove a book from the system.
+- 📊 **Reports** — View total books, total stock value, out-of-stock books, and total profit.
+
 ---
 
-## 🚀 How to Run
+## 🧠 Technologies Used
 
-1. Make sure you have a C++ compiler installed (`g++` recommended).
-2. Clone the repository:
+- **C++**
+- **STL (Standard Template Library)**
+- **Console-based UI**
+
+---
+
+## 🖥️ How to Run
+
+1. Clone the repository:
    ```bash
-   git clone https://github.com/Mohammed-Mohsen2006/Library-Management-System.git
-3. Compile the code:
-   ```bash
+   git clone https://github.com/YourUsername/Library-Management-System.git
+2. Open the project in your IDE (e.g., Code::Blocks, Visual Studio, or VS Code).
+
+3. Compile and run :
    g++ main.cpp -o library
-4. Run the program:
-   ./library    # For Linux/Mac
-   
-   library.exe  # For Windows
+   ./library
+
